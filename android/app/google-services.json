@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244228127831",
+    "project_id": "mentoracademyproject",
+    "storage_bucket": "mentoracademyproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244228127831:android:cb2c6df0b6d0fe378c3712",
+        "android_client_info": {
+          "package_name": "com.example.mentoracademyproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUFnvT8Of8pMq_souEpXQFcrFbe42x6WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
