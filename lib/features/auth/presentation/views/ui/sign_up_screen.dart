@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mentoracademyproject/context_extension.dart';
+import 'package:mentoracademyproject/core/utils/context_extension.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
-import '../cubits/sign_up_cubit/sign_up_cubit.dart';
-import 'home.dart';
+import '../../view_model/cubits/sign_up_cubit/sign_up_cubit.dart';
+import '../../../../home/presentation/views/ui/home_screen.dart';
 import 'login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
