@@ -9,7 +9,7 @@ import 'login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   SignUpScreen({super.key});
-
+  static String id = "SignUpScreen";
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
@@ -34,7 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           context.showSnackBar('User Registered Successfully!');
           isLoading = false;
           Navigator.of(context).push(MaterialPageRoute(builder: (context){
-            return MyHome();
+            return HomeScreen();
           }));
         } else if (state is SignUpFailure) {
           isLoading = false;

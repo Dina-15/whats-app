@@ -5,8 +5,9 @@ import 'package:mentoracademyproject/features/auth/presentation/view_model/cubit
 import 'package:mentoracademyproject/features/auth/presentation/views/ui/login_screen.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
-class MyHome extends StatelessWidget {
-  MyHome({super.key});
+class HomeScreen extends StatelessWidget {
+  HomeScreen({super.key});
+  static String id = "HomeScreen";
   bool isLoading = false;
   @override
   Widget build(BuildContext context) {

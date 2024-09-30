@@ -9,7 +9,7 @@ import '../../../../home/presentation/views/ui/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({super.key});
-
+  static String id = "LoginScreen";
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           isLoading = false;
           context.showSnackBar('User Logged In Successfully!');
           Navigator.of(context).push(MaterialPageRoute(builder: (builder){
-            return  MyHome();
+            return HomeScreen();
           }));
         } else if(state is LoginFailure) {
           isLoading = false;
