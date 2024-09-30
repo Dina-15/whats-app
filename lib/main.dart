@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:mentoracademyproject/features/auth/presentation/views/ui/login_screen.dart';
 import 'features/auth/presentation/view_model/cubits/login_cubit/login_cubit.dart';
 import 'features/auth/presentation/view_model/cubits/logout_cubit/logout_cubit.dart';
 import 'features/auth/presentation/view_model/cubits/sign_up_cubit/sign_up_cubit.dart';
 import 'features/auth/data/repo/firebase_options.dart';
-
-import 'features/auth/presentation/views/ui/login_screen.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,8 +29,11 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.light(),
-        home:  LoginScreen(),
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+          textTheme: GoogleFonts.interTextTheme(),
+        ),
+        home: LoginScreen()
       ),
     );
   }
