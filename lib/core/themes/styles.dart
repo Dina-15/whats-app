@@ -5,11 +5,11 @@ abstract class Styles{
   static TextStyle textStyle24 = const TextStyle(
     fontWeight: FontWeight.w600,
     color: Colors.black,
-    fontSize: 24
+    fontSize: 26
   );
-  static TextStyle textStyle15 = const TextStyle(
+  static TextStyle textStyle20 = const TextStyle(
     fontWeight: FontWeight.w600,
     color: ColorApp.primaryColor,
-    fontSize: 15
+    fontSize: 20
   );
 }
