@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mentoracademyproject/core/utils/constants/asset_fonts.dart';
 import '../../../../../core/themes/styles.dart';
 import '../../../../../core/utils/constants/asset_images.dart';
 
@@ -20,30 +19,20 @@ class SplashBody extends StatelessWidget {
           height: 100,
         ),
         const Spacer(
-          flex: 2,
+          flex: 1,
         ),
-        const Text(
-          "from",
+        Text(
+          "WhatsUp",
           textAlign: TextAlign.center,
+          style: Styles.textStyle24
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              AssetImages.metaIcon,
-              height: 30,
-              width: 30,
-            ),
             Text(
-              "Meta",
-              style: Styles.textStyle24.copyWith(
-                  fontWeight: FontWeight.w500, fontFamily: AssetFonts.metaFont),
+              "The best chat app for this country",
+              style: Styles.textStyle15,
               textAlign: TextAlign.center,
             ),
-          ],
-        ),
-        const SizedBox(
-          height: 20,
+        const Spacer(
+          flex: 3,
         ),
       ],
     );
