@@ -9,7 +9,7 @@ import 'features/splash/presentation/views/splash_screen.dart';
 import 'features/auth/presentation/view_model/cubits/login_cubit/login_cubit.dart';
 import 'features/auth/presentation/view_model/cubits/logout_cubit/logout_cubit.dart';
 import 'features/auth/presentation/view_model/cubits/sign_up_cubit/sign_up_cubit.dart';
-import 'features/auth/data/repo/firebase_options.dart';
+import 'firebase_options.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
