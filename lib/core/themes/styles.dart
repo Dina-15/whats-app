@@ -8,6 +8,16 @@ class AppStyles {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
+  static TextStyle font18Black = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w500,
+    color: Colors.black,
+  );
+  static TextStyle font14Black = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: Colors.black,
+  );
   static TextStyle font24Green = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w500,
@@ -18,14 +28,14 @@ class AppStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.lightGrey,
   );
-  static TextStyle font16DarkGreenRegular = TextStyle(
+  static TextStyle font16DarkGreyRegular = TextStyle(
     fontSize: 16.sp,
-    fontWeight: FontWeight.w500,
-    color: AppColors.secondaryColor,
+    fontWeight: FontWeight.w400,
+    color: AppColors.darkGrey,
   );
   static TextStyle font18WhiteRegular = TextStyle(
     fontSize: 18.sp,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w600,
     color: Colors.white,
   );
 }

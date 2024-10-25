@@ -12,10 +12,10 @@ class ToggleToLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(children: [
-        TextSpan(text: "Have an account? ", style: AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.darkGrey)),
+        TextSpan(text: "Have an account? ", style: AppStyles.font16DarkGreyRegular.copyWith(color: AppColors.darkGrey)),
         TextSpan(
             text: " Login",
-            style: AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.primaryColor),
+            style: AppStyles.font16DarkGreyRegular.copyWith(color: AppColors.primaryColor),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 Navigator.pushReplacementNamed(context, Routes.loginScreen);
