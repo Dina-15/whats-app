@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentoracademyproject/core/routing/routes.dart';
 import 'package:mentoracademyproject/features/splash/presentation/views/widgets/splash_body.dart';
-import '../../../auth/presentation/views/ui/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -22,8 +22,8 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
   navigateToLoginScreen(){
-  Future.delayed(const Duration(seconds: 3), (){
-  Navigator.pushNamed(context, LoginScreen.id);
+  Future.delayed(const Duration(seconds: 5), (){
+  Navigator.pushNamed(context, Routes.loginScreen);
   });
 }
 }

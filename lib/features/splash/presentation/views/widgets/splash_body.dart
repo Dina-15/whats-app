@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mentoracademyproject/core/utils/constants/asset_fonts.dart';
 import '../../../../../core/themes/styles.dart';
-import '../../../../../core/utils/constants/asset_images.dart';
+import '../../../../../core/utils/constants/app_assets.dart';
 
 class SplashBody extends StatelessWidget {
   const SplashBody({super.key});
@@ -15,7 +15,7 @@ class SplashBody extends StatelessWidget {
           flex: 2,
         ),
         Image.asset(
-          AssetImages.logo,
+          AppAssets.logo,
           width: 100,
           height: 100,
         ),
@@ -30,14 +30,13 @@ class SplashBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              AssetImages.metaIcon,
+              AppAssets.metaIcon,
               height: 30,
               width: 30,
             ),
             Text(
               "Meta",
-              style: Styles.textStyle24.copyWith(
-                  fontWeight: FontWeight.w500, fontFamily: AssetFonts.metaFont),
+              style: AppStyles.font24Green.copyWith( fontFamily: AssetFonts.metaFont),
               textAlign: TextAlign.center,
             ),
           ],
