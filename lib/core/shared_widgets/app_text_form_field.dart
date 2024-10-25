@@ -80,7 +80,7 @@ class AppTextFormField extends StatelessWidget {
       keyboardType: keyboardType,
       decoration: InputDecoration(
         labelText: labelText,
-        labelStyle: labelStyle ?? AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.darkGrey),
+        labelStyle: labelStyle ?? AppStyles.font16DarkGreyRegular,
         // The InputDecoration object customizes the appearance of the TextFormField
         isDense: true,
         // isDense: true: Reduces the height of the text field.
@@ -114,7 +114,7 @@ class AppTextFormField extends StatelessWidget {
             width: 1.5.w
           ),
         ),
-        hintStyle: hintStyle ?? AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.darkGrey),
+        hintStyle: hintStyle ?? AppStyles.font16DarkGreyRegular,
         // hintStyle: Uses the provided hintStyle or defaults to a predefined text style.
         hintText: hintText,
         // hintText: Displays the provided hint text.
@@ -152,7 +152,7 @@ class AppTextFormField extends StatelessWidget {
       // cursorColor: Sets the color of the cursor to the primary blue color.
       obscureText: isObscureText ?? false,
       // obscureText: Uses the provided isObscureText value or defaults to false.
-      style: inputStyle ?? AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.darkGrey),
+      style: inputStyle ?? AppStyles.font16DarkGreyRegular,
       // style: Uses the provided inputStyle or defaults to a predefined text style.
     );
   }

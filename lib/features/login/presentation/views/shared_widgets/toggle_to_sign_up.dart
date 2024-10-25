@@ -14,10 +14,10 @@ class ToggleToSignUp extends StatelessWidget {
       text: TextSpan(children: [
         TextSpan(
             text: "Don’t have an account? ",
-            style: AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.darkGrey)),
+            style: AppStyles.font16DarkGreyRegular.copyWith(color: AppColors.darkGrey)),
         TextSpan(
             text: " Join us",
-            style: AppStyles.font16DarkGreenRegular.copyWith(color: AppColors.primaryColor),
+            style: AppStyles.font16DarkGreyRegular.copyWith(color: AppColors.primaryColor),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
                 Navigator.pushNamed(context, Routes.signUpScreen);
