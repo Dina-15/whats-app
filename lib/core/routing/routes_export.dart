@@ -8,3 +8,4 @@ export 'package:flutter_bloc/flutter_bloc.dart';
 export 'package:mentoracademyproject/features/login/presentation/view_model/cubits/login_cubit/login_cubit.dart';
 export 'package:mentoracademyproject/features/signup/presentation/view_model/cubits/sign_up_cubit/sign_up_cubit.dart';
 export 'package:mentoracademyproject/features/home/presentation/view_model/cubits/logout_cubit/logout_cubit.dart';
+export 'package:mentoracademyproject/features/profile/presentation/views/ui/profile_screen.dart';

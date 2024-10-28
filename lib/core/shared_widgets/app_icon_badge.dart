@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 
-class AddIconBadge extends StatelessWidget {
-  const AddIconBadge({super.key});
+class AppIconBadge extends StatelessWidget {
+  const AppIconBadge({super.key, required this.icon});
 
+  final Icon icon;
   @override
   Widget build(BuildContext context) {
-    return const Badge(
-      label: Icon(
-        Icons.add,
-        color: Colors.white,
-        size: 22,
-      ),
+    return Badge(
+      label: icon,
       backgroundColor: AppColors.primaryColor,
     );
   }

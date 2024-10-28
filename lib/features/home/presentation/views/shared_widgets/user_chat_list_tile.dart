@@ -14,23 +14,26 @@ class UserChatListTile extends StatelessWidget {
   OthersChatModel userModel;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: ImageCircularAvatar(
-        image: userModel.image,
-      ),
-      title: Text(userModel.name,
-          style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22)),
-      subtitle: Text(userModel.lastMessage ?? "",
-          style: AppStyles.font16DarkGreyRegular),
-      trailing: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Text(" ${DateFormat('hh:mm a').format(userModel.date)}",
-              style: AppStyles.font16DarkGreyRegular.copyWith(fontSize: 14)
-          ),
-          verticalSpace(5),
-          MessagesCountBadge(count: userModel.notifications,),
-        ],
+    return InkWell(
+      onTap: (){},//! To do: navigate to user chat screen
+      child: ListTile(
+        leading: ImageCircularAvatar(
+          image: userModel.image,
+        ),
+        title: Text(userModel.name,
+            style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22)),
+        subtitle: Text(userModel.lastMessage ?? "",
+            style: AppStyles.font16DarkGreyRegular),
+        trailing: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text(" ${DateFormat('hh:mm a').format(userModel.date)}",
+                style: AppStyles.font16DarkGreyRegular.copyWith(fontSize: 14)
+            ),
+            verticalSpace(5),
+            MessagesCountBadge(count: userModel.notifications,),
+          ],
+        ),
       ),
     );
   }
