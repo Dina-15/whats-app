@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:mentoracademyproject/core/helpers/spacing.dart';
 import 'package:mentoracademyproject/core/shared_widgets/image_circular_avatar.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
@@ -19,16 +21,14 @@ class UserChatListTile extends StatelessWidget {
       title: Text(userModel.name,
           style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22)),
       subtitle: Text(userModel.lastMessage ?? "",
-          style: AppStyles.font16DarkGreyRegular
-              .copyWith(color: AppColors.darkGrey)),
+          style: AppStyles.font16DarkGreyRegular),
       trailing: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Text(
-            "${userModel.date.hour}:${userModel.date.minute}",
-            style: AppStyles.font14LightGray
-                .copyWith(color: AppColors.darkGrey, fontSize: 12)
-                .copyWith(color: AppColors.darkGrey),
+          Text(" ${DateFormat('hh:mm a').format(userModel.date)}",
+              style: AppStyles.font16DarkGreyRegular.copyWith(fontSize: 14)
           ),
+          verticalSpace(5),
           MessagesCountBadge(count: userModel.notifications,),
         ],
       ),
