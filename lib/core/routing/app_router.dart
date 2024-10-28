@@ -27,16 +27,12 @@ class AppRouter {
                   create: (context) => LogoutCubit(),
                   child: HomeScreen(),
                 ));
-      default:
+      case Routes.profileScreen:
         return MaterialPageRoute(
-          builder: (context) => Scaffold(
-            body: Center(
-              child: Text(
-                "No route defined for ${settings.name}",
-              ),
-            ),
-          ),
-        );
+            builder: (_) => ProfileScreen(),
+            );
+      default:
+        return  null;
     }
   }
 }

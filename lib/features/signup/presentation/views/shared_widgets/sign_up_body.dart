@@ -10,7 +10,6 @@ import 'email_text_field.dart';
 import 'name_text_field.dart';
 import 'password_text_field.dart';
 import 'phone_text_field.dart';
-import 'sign_up_bloc_listener.dart';
 import 'toggle_to_login.dart';
 
 class SignUpBody extends StatelessWidget {

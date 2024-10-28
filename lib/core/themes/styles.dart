@@ -20,7 +20,7 @@ class AppStyles {
   );
   static TextStyle font24Green = TextStyle(
     fontSize: 24.sp,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     color: AppColors.primaryColor,
   );
   static TextStyle font14LightGray = TextStyle(

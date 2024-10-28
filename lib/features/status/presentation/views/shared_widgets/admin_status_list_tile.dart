@@ -3,7 +3,7 @@ import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 import 'package:mentoracademyproject/core/utils/constants/app_assets.dart';
 import 'package:mentoracademyproject/core/shared_widgets/image_circular_avatar.dart';
-import 'add_icon_badge.dart';
+import '../../../../../core/shared_widgets/app_icon_badge.dart';
 import 'status_border.dart';
 
 class AdminStatusListTile extends StatelessWidget {
@@ -23,7 +23,18 @@ class AdminStatusListTile extends StatelessWidget {
           ImageCircularAvatar(
             image: AppAssets.profileImage,
           ),
-          Positioned(top: 35, left: 34, child: AddIconBadge())
+          Positioned(top: 35, left: 40,
+              child: SizedBox(
+                height: 25,
+            width: 26,
+            child: AppIconBadge(
+              icon: Icon(
+                Icons.add,
+                color: Colors.white,
+                size: 22,
+              ),
+            ),
+          ))
         ]),
         title: Text(
           "My Status",

@@ -29,6 +29,7 @@ class AppTextFormField extends StatelessWidget {
   final Function(String?)? validator;
   final Function(String?)? onChanged;
   final VoidCallback? onTap;
+  final Function(String?)? onSubmitted;
   final Color? enabledBorderSideColor;
   final Color? focusedBorderColor;
   final int? radius;
@@ -62,6 +63,7 @@ class AppTextFormField extends StatelessWidget {
     this.validator,
     this.focusedBorderColor,
     this.cursorColor,
+    this.onSubmitted,
     required this.keyboardType,
   });
 
@@ -77,6 +79,7 @@ class AppTextFormField extends StatelessWidget {
       onChanged: onChanged,
       onTap: onTap,
       enabled: true,
+      onFieldSubmitted: onSubmitted,
       keyboardType: keyboardType,
       decoration: InputDecoration(
         labelText: labelText,
