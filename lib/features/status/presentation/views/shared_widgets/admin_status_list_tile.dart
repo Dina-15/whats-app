@@ -30,8 +30,7 @@ class AdminStatusListTile extends StatelessWidget {
           style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22),
         ),
         subtitle: Text("Tab to add status update",
-            style: AppStyles.font16DarkGreyRegular
-                .copyWith(color: AppColors.darkGrey)),
+            style: AppStyles.font16DarkGreyRegular),
       ),
     );
   }
