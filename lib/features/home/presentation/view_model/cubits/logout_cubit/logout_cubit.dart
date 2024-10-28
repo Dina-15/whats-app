@@ -8,7 +8,6 @@ class LogoutCubit extends Cubit<LogoutStates>
 
   Future<void> logoutUser()async
   {
-    emit(LogoutLoading());
     try{
       await FirebaseAuth.instance.signOut();
       emit(LogoutSuccess());

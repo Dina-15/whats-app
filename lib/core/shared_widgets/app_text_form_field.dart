@@ -100,7 +100,7 @@ class AppTextFormField extends StatelessWidget {
               ),
               borderSide: BorderSide(
                 color: focusedBorderColor ?? AppColors.primaryColor,
-                width: 1.5.w,
+                width: 2.w,
               ),
             ),
         enabledBorder: OutlineInputBorder(
@@ -111,7 +111,7 @@ class AppTextFormField extends StatelessWidget {
           ),
           borderSide: BorderSide(
             color: enabledBorderSideColor ?? AppColors.lightGrey,
-            width: 1.5.w
+            width: 2.w
           ),
         ),
         hintStyle: hintStyle ?? AppStyles.font16DarkGreyRegular,
@@ -132,7 +132,7 @@ class AppTextFormField extends StatelessWidget {
           ),
           borderSide: BorderSide(
             color: Colors.red,
-            width: 1.5.w,
+            width: 2.w,
           ),
         ),
         // errorBorder set the border styles when there is a validation error.
@@ -142,7 +142,7 @@ class AppTextFormField extends StatelessWidget {
           ),
           borderSide: BorderSide(
             color: Colors.red,
-            width: 1.5.w,
+            width: 2.w,
           ),
         ),
         // focusedErrorBorder set the border styles when there is a validation
