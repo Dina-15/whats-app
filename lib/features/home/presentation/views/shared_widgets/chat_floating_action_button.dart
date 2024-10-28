@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 
 class ChatFloatingActionButton extends StatelessWidget {
@@ -9,10 +10,10 @@ class ChatFloatingActionButton extends StatelessWidget {
     return FloatingActionButton(
       onPressed: () {},
       backgroundColor: AppColors.primaryColor,
-      child: const Icon(
+      child: Icon(
         Icons.message,
         color: Colors.white,
-        size: 30,
+        size: 30.r,
       ),
     );
   }

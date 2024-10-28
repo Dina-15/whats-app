@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:mentoracademyproject/core/helpers/spacing.dart';
 import 'package:mentoracademyproject/core/utils/constants/asset_fonts.dart';
 import '../../../../../core/themes/styles.dart';
 import '../../../../../core/utils/constants/app_assets.dart';
@@ -16,8 +18,8 @@ class SplashBody extends StatelessWidget {
         ),
         Image.asset(
           AppAssets.logo,
-          width: 100,
-          height: 100,
+          width: 100.w,
+          height: 100.h,
         ),
         const Spacer(
           flex: 2,
@@ -31,8 +33,8 @@ class SplashBody extends StatelessWidget {
           children: [
             Image.asset(
               AppAssets.metaIcon,
-              height: 30,
-              width: 30,
+              height: 30.h,
+              width: 30.w,
             ),
             Text(
               "Meta",
@@ -41,9 +43,7 @@ class SplashBody extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(
-          height: 20,
-        ),
+        verticalSpace(20),
       ],
     );
   }

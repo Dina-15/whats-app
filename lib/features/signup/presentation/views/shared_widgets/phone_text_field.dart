@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/shared_widgets/app_text_form_field.dart';
 
 import '../../view_model/cubits/sign_up_cubit/sign_up_cubit.dart';
@@ -12,7 +13,7 @@ class PhoneTextField extends StatelessWidget {
     return AppTextFormField(
       hintText: 'Phone',
       labelText: 'Phone',
-      prefixIcon: const Icon(Icons.phone_android, size: 28,),
+      prefixIcon: Icon(Icons.phone_android, size: 28.r,),
       controller: context.read<SignUpCubit>().phoneController,
       validator: (value) {
         if (value == null || value.isEmpty) {

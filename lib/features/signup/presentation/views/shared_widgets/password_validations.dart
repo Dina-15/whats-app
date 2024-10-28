@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class PasswordValidations extends StatelessWidget {
       children: [
         horizontalSpace(20),
         CircleAvatar(
-          radius: 2,
+          radius: 2.r,
           backgroundColor: AppColors.darkGrey,
         ),
         Text(
@@ -51,7 +52,7 @@ class PasswordValidations extends StatelessWidget {
           style: AppStyles.font14LightGray.copyWith(
               decoration: isValid ? TextDecoration.lineThrough : null,
               decorationColor: AppColors.primaryColor,
-              decorationThickness: 1,
+              decorationThickness: 1.sp,
               color: isValid ? AppColors.lightGrey : AppColors.darkGrey),
           textAlign: TextAlign.start,
         ),

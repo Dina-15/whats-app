@@ -1,9 +1,7 @@
-import 'dart:developer';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/helpers/spacing.dart';
-import 'package:mentoracademyproject/core/shared_widgets/app_text_button.dart';
 import 'package:mentoracademyproject/core/shared_widgets/app_text_form_field.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 import 'package:mentoracademyproject/features/profile/presentation/views/shared_widgets/profile_photo.dart';
@@ -11,7 +9,7 @@ import 'package:mentoracademyproject/features/profile/presentation/views/shared_
 import '../../../data/services/fetch_profile_data_services.dart';
 
 class ProfileScreen extends StatefulWidget {
-  ProfileScreen({super.key});
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -41,13 +39,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
       appBar: AppBar(
         title: Text(
           "Profile",
-          style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24),
+          style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24.sp),
         ),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 20,
+          padding: EdgeInsets.symmetric(
+            horizontal: 20.w,
           ),
           child: Form(
             key: formKey,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/helpers/spacing.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 import '../shared_widgets/admin_status_list_tile.dart';
@@ -11,7 +12,7 @@ class StatusScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 8, left: 8),
+      padding: EdgeInsets.only(top: 8.h, left: 8.w),
       child: ListView(
         children: [
           const AdminStatusListTile(),
@@ -21,14 +22,14 @@ class StatusScreen extends StatelessWidget {
             style: AppStyles.font16DarkGreyRegular,
           ),
           verticalSpace(10),
-          OthersStatusList(),
+          const OthersStatusList(),
           verticalSpace(15),
           Text(
             "   Viewed Updates",
             style: AppStyles.font16DarkGreyRegular,
           ),
           verticalSpace(10),
-          ViewedUpdatesListBuilder(),
+          const ViewedUpdatesListBuilder(),
         ],
       ),
     );

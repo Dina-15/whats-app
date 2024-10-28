@@ -23,7 +23,8 @@ class SignUpBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           verticalSpace(40),
-          Image.asset(AppAssets.logo, width: 100,height: 100,),
+          Image.asset(AppAssets.logo, width: 100.w,
+            height: 100.h,),
           verticalSpace(30),
           Text("Create new account",
               overflow: TextOverflow.ellipsis,

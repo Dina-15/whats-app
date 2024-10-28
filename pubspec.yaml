@@ -88,7 +88,7 @@ flutter:
   fonts:
     - family: FS Elliot Pro
       fonts:
-        - asset: assets/fonts/FS Elliot ProItalic.otf
+        - asset: assets/fonts/FS Elliot ProBold.otf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
