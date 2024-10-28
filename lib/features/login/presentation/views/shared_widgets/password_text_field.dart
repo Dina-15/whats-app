@@ -57,7 +57,7 @@ class _PassTextFieldState extends State<PasswordTextField> {
         AppTextFormField(
           hintText: 'Password',
           labelText: 'Password',
-          prefixIcon: const Icon(Icons.lock, size: 28,),
+          prefixIcon: Icon(Icons.lock, size: 28.r,),
           controller: _passwordController,
           validator: (value) {
             if (value == null ||

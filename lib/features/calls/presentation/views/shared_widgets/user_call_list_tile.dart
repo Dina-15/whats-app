@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
@@ -21,7 +22,7 @@ class UserCallListTile extends StatelessWidget {
         userModel.name,
         style: AppStyles.font28DarkBlackBold.copyWith(
           fontSize:
-              22, //! To do: change text color and add icon call mad regards call status
+              22.sp, //! To do: change text color and add icon call mad regards call status
         ),
       ),
       subtitle: Text(
@@ -32,7 +33,7 @@ class UserCallListTile extends StatelessWidget {
           onPressed: () {}, //! To DO: navigate to call handler
           icon: Icon(
             Icons.call,
-            size: 25,
+            size: 25.r,
             color: AppColors.darkGrey,
           )),
     );

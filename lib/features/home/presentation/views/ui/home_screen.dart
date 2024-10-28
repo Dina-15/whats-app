@@ -5,11 +5,10 @@ import '../../view_model/cubits/logout_cubit/logout_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
-  static String id = "HomeScreen";
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<LogoutCubit, LogoutStates>(
-      builder: (context, state) => LogoutBlocListener()
+      builder: (context, state) => const LogoutBlocListener()
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/helpers/app_regex.dart';
 
 import 'package:mentoracademyproject/core/shared_widgets/app_text_form_field.dart';
@@ -16,7 +17,7 @@ class EmailTextField extends StatelessWidget {
      hintText: 'Email',
      labelText: 'Email',
       keyboardType: TextInputType.emailAddress,
-      prefixIcon: const Icon(Icons.email, size: 28,),
+      prefixIcon: Icon(Icons.email, size: 28.r,),
       controller: context.read<SignUpCubit>().emailController,
       validator: (value) {
         if (value == null || value.isEmpty || !AppRegex.isEmailValid(value)) {
