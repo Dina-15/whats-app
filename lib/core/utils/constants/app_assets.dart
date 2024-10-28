@@ -14,4 +14,5 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   // Image PNG
   static const logo = "${PngAssets.pngAssets}whatsappLogo.png";
   static const metaIcon = "${PngAssets.pngAssets}meta icon.png";
+  static const profileImage = "${PngAssets.pngAssets}profile.png";
 }
