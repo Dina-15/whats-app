@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/routing/routes.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 import 'package:mentoracademyproject/features/home/presentation/view_model/cubits/logout_cubit/logout_cubit.dart';
@@ -17,19 +18,19 @@ class HomeBody extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Padding(
-        padding: const EdgeInsets.only(top: 8, left: 8),
+        padding: EdgeInsets.only(top: 8.h, left: 8.w),
         child: Scaffold(
           appBar: AppBar(
             automaticallyImplyLeading: false,
             title: Text(
               " WhatsApp",
-              style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24),
+              style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24.sp),
             ),
             actions: [
               const SearchIcon(),
               PopupMenuButton<String>(
                 icon: const Icon(Icons.more_vert_rounded),
-                iconSize: 27,
+                iconSize: 27.r,
                 color: Colors.white,
                 itemBuilder: (BuildContext context) {
                   return [

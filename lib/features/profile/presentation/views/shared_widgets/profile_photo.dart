@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../data/services/fetch_profile_data_services.dart';
 import 'mod_icon_badge.dart';
 import 'profile_image_circle_avatar.dart';
@@ -33,11 +34,11 @@ class _ProfilePhotoState extends State<ProfilePhoto> {
       children: [
         ProfileImageCircleAvatar(imageURL: imageURL),
         Positioned(
-          top: 100,
-          left: 95,
+          top: 100.h,
+          left: 95.w,
           child: SizedBox(
-            height: 42,
-            width: 42,
+            height: 42.h,
+            width: 42.w,
             child: InkWell(
               onTap: () async {
                 _image = await FetchProfileDataServices.pickImage();

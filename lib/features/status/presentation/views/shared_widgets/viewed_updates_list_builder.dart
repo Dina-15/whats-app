@@ -5,7 +5,7 @@ import '../../../data/repo/others_data.dart';
 import 'user_status_list_tile.dart';
 
 class ViewedUpdatesListBuilder extends StatefulWidget {
-  ViewedUpdatesListBuilder({super.key});
+  const ViewedUpdatesListBuilder({super.key});
 
   @override
   State<ViewedUpdatesListBuilder> createState() => _ViewedUpdatesListBuilderState();

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
@@ -25,7 +26,7 @@ class UserStatusListTile extends StatelessWidget {
         ),
             ImageCircularAvatar(image: userModel.image,),]),
         title: Text(userModel.name,
-            style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22)),
+            style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 22.sp)),
         subtitle: Text("${userModel.date.year == DateTime.now().year && userModel.date.month == DateTime.now().month && userModel.date.day == DateTime.now().day ? "Today" : DateFormat('EEEE').format(userModel.date)},"
             " ${DateFormat('hh:mm a').format(userModel.date)}",
             style: AppStyles.font16DarkGreyRegular),

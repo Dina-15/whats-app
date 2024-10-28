@@ -4,7 +4,7 @@ import 'package:mentoracademyproject/features/status/data/repo/others_data.dart'
 import 'user_status_list_tile.dart';
 
 class OthersStatusList extends StatefulWidget {
-  OthersStatusList({super.key});
+  const OthersStatusList({super.key});
 
   @override
   State<OthersStatusList> createState() => _OthersStatusListState();

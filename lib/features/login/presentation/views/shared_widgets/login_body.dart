@@ -21,7 +21,7 @@ class LoginBody extends StatelessWidget {
       child: Column(
         children: [
           verticalSpace(80),
-          Image.asset(AppAssets.logo, width: 100,height: 100,),
+          Image.asset(AppAssets.logo, width: 100.w,height: 100.h,),
           verticalSpace(30),
           Text("Login to your account", style: AppStyles.font28DarkBlackBold),
           verticalSpace(30),

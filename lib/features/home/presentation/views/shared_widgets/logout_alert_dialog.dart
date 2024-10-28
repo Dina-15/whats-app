@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mentoracademyproject/core/themes/colors.dart';
 import 'package:mentoracademyproject/core/themes/styles.dart';
 
@@ -7,14 +8,14 @@ class LogoutAlertDialog {
     return await showDialog<String>(
       context: context,
       builder:(context) => AlertDialog(
-          icon: const Icon(
+          icon: Icon(
             Icons.error_outline,
             color: AppColors.primaryColor,
-            size: 70,
+            size: 70.r,
           ),
           content: Text(
             "Do you want to logout?",
-            style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24)
+            style: AppStyles.font28DarkBlackBold.copyWith(fontSize: 24.sp)
           ),
           actions: [
             TextButton(
